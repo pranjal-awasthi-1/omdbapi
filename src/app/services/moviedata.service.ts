@@ -13,5 +13,8 @@ export class MoviedataService {
   movielist(movieName:any,pagenumber:any){
       return this.http.get(this.url+"?s="+movieName+"&apikey=3e2e0d38"+"&page="+pagenumber);
   }
-  
+  gettingmovie(movieName:any)
+  {
+    return this.http.get(this.url+"?i="+movieName+"&apikey=3e2e0d38");
+  }
 }

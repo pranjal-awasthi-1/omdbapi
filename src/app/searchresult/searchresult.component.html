@@ -1,6 +1,6 @@
-<div class="search">
-<input class="type" type="text" [(ngModel)]="moviename" placeholder="Enter movie name">
+<div class="search"> 
+<input class="type" type="text" (keyup.enter)="gotoroute()" [(ngModel)]="moviename" placeholder="Enter movie name">
 
-<button class="btn"  (click)="gotoroute()" (keyup.enter)="gotoroute()">Search</button>
+<button class="btn"  (click)="gotoroute()" >Search</button>
 
 </div>

@@ -1,11 +1,11 @@
 
 <br>
 <div class ="displaymovies">
-  <div  *ngFor="let list of movies" class="display" style="cursor:'pointer'">
+  <div  *ngFor="let list of movies" class="display" style="cursor:'pointer'" (click)= GoForRouting(list.imdbID)>
      
-  <img [src]="list.Poster!== 'N/A' ? list.Poster : 'https://previews.123rf.com/images/kaymosk/kaymosk1804/kaymosk180400006/100130939-error-404-page-not-found-error-with-glitch-effect-on-screen-vector-illustration-for-your-design-.jpg?fj=1' " width="200" height="200">
-  <p class="printing" >{{list.Title}}</p>
-
+  <img  [src]="list.Poster!== 'N/A' ? list.Poster : 'https://previews.123rf.com/images/kaymosk/kaymosk1804/kaymosk180400006/100130939-error-404-page-not-found-error-with-glitch-effect-on-screen-vector-illustration-for-your-design-.jpg?fj=1' " width="200" height="200">
+  <p class="printing" >{{list.Title}} </p>
+  
   </div> 
 </div>
 

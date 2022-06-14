@@ -11,14 +11,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { SearchresultComponent } from './searchresult/searchresult.component';
 import { DisplayMoviesWithPagesComponent } from './DisplayMoviesWithPages/DisplayMoviesWithPages.component';
-import { DisplayDetailsComponent } from './display-details/display-details.component';
-
+import { OverviewPageComponent } from './overview-page/overview-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     SearchresultComponent,
     DisplayMoviesWithPagesComponent,
-    DisplayDetailsComponent
+    OverviewPageComponent,
   ],
   imports: [
     BrowserModule,HttpClientModule, AppRoutingModule, FormsModule
