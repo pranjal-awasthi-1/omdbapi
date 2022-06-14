@@ -1,0 +1,27 @@
+
+.btn{
+    position:relative;
+    height:30px;
+    border-radius: 5px; 
+    text-align: center;
+    padding: 2rem; 
+}
+
+
+.printing{
+    color: white;
+   
+}
+
+.display{
+    width: fit-content;
+}
+
+.displaymovies{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+    
+    text-align: center;
+    padding: 2rem;
+}
